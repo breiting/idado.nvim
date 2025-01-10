@@ -2,6 +2,8 @@
 
 This is a pretty simple neovim plugin, for managing image files specifically in `markdown` environments.
 
+https://github.com/user-attachments/assets/8b7eaf7f-a2d5-4f98-bd08-dcd448d4c0b6
+
 ## Usage
 
 Either copy a filepath or drag&drop a file into the current buffer in an empty line. For example:
