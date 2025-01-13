@@ -3,7 +3,7 @@ local M = {}
 -- Configuration parameters
 M.config = {
 	target_path = "~/Documents/images/", -- Defines the output path
-	pattern = "%Y-%m-%d_%H-%M-%S", -- Defines the pattern which should be used
+	pattern = "%Y-%m-%d_%H-%M-%S",    -- Defines the pattern which should be used
 }
 
 ---Generate the new filename using a certain pattern
@@ -56,8 +56,8 @@ M.process_image_path = function()
 
 	copy_file(source_path, target_path)
 
-	-- Generate Markdown line, and replace the filepath
-	local markdown_image = string.format("![%s](%s)", new_filename, target_path)
+	-- Generate new content line for Obsidian
+	local markdown_image = string.format("![[%s]]", new_filename)
 	vim.fn.setline(".", markdown_image)
 
 	vim.notify("Image successfully added: " .. target_path, vim.log.levels.INFO)

@@ -1,6 +1,6 @@
 # `idado.nvim`
 
-This is a pretty simple neovim plugin, for managing image files specifically in `markdown` environments.
+This is a pretty simple neovim plugin, for managing image files specifically for [Obsidian](https://obsidian.md).
 
 https://github.com/user-attachments/assets/8b7eaf7f-a2d5-4f98-bd08-dcd448d4c0b6
 
@@ -17,12 +17,8 @@ specified `target_path` while renaming it to the given file pattern and replaces
 a proper markdown image directive:
 
 ```
-![2025-01-10_11-52-11.png](/Users/breiting/Documents/images/2025-01-10_11-52-11.png)
+![[2025-01-10_11-52-11.png]]
 ```
-
-This is specifically useful, if you write `markdown` files, and would like to integrate images
-from external sources.
-
 ## Installation
 
 Please use your favorite plugin manager, I am using `lazy.vim` with the following configuration.
